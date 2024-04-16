@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6305718828:AAG1m544vJ3Z-hTva51kBDynV3OukoSxNZU")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6369762350:AAFeOu_MY1H_6-8vTNrWBqFLP7Ul6BnUEjY")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "27570599"))
+APP_ID = int(os.environ.get("APP_ID", "5468078784"))
 
 #Your API Hash from my.telegram.org
 API_HASH = os.environ.get("API_HASH", "0329a786739cb73a2b1176582c5e8376")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002042807021"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002070818275"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5468078784"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5347055085"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -33,7 +33,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "blade")
 
 #force sub channel id, use "," between each id and add "-100" as prefix
 try:
-    FORCE_SUB_CHANNELS=[-1002080278271, -1002127474493, -1001946737836]
+    FORCE_SUB_CHANNELS=[-1002062494458, -1002077364596, -1001895496000, -1001844173646]
     for x in (os.environ.get("FORCE_SUB_CHANNELS", "").split()):
         FORCE_SUB_CHANNELS.append(int(x))
 except ValueError:
